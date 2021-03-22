@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 release=$1
 split_num=$2
