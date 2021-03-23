@@ -7,7 +7,7 @@ from suggest_reviewers import load_model, create_embeddings
 
 app = Flask("ACL Paper Embeddings")
 
-model, epoch = load_model(None, os.env('MODEL_FILE'), force_cpu=True)
+model, epoch = load_model(None, os.environ['MODEL_FILE'], force_cpu=True)
 model.eval()
 
 @app.route('/', methods=['POST'])

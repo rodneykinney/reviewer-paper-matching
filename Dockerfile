@@ -2,12 +2,12 @@ FROM python:3.7
 
 WORKDIR /work
 
-RUN pip install -r gunicorn
+RUN pip install gunicorn
+COPY requirements.txt .
 RUN pip install -r requirements.txt
+RUN pip install pandas
 
 COPY . /work
-
-COPY scratch .
 
 ENV MODEL_FILE scratch/similarity-model.pt
 
