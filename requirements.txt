@@ -7,3 +7,4 @@ cvxpy
 cvxopt
 requests
 python-slugify
+flask
